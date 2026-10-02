@@ -2,47 +2,89 @@
 
 I'm a Computer Science student focused on backend engineering with Python.
 
-I like understanding how things work under the hood rather than just learning how to use them. My current focus is backend development, but my long-term goal is broader: to become a versatile software engineer who can understand systems as a whole — from application logic and databases to networking and infrastructure.
+I approach software as a system rather than a collection of technologies. I want to understand how the layers fit together — from application logic and data modeling to networking, infrastructure, deployment, and observability.
+
+My current focus is backend development, but the long-term goal is broader: to become a versatile software engineer capable of understanding, designing, and maintaining systems as a whole.
 
 ## About me
 
-I learn by building things and going deeper when the fundamentals matter.
+I learn primarily by building things.
 
-Before moving to frameworks, I worked through the foundations of Python, networking, HTTP, backend architecture, developer tools, and databases. I recently completed a low-level HTTP CRUD API built without a web framework, using it to understand the underlying mechanics rather than hiding them behind abstractions.
+I started with lower-level backend fundamentals and gradually moved toward higher-level abstractions. Instead of treating frameworks as black boxes, I prefer to understand what they solve, what they hide, and where their boundaries are.
 
-I value simple solutions, deliberate trade-offs, and understanding why an abstraction exists before introducing it.
+This approach has taken me from building an HTTP API without a framework to designing an asynchronous backend with a database, migrations, authentication, testing, and infrastructure around it.
 
-I'm not interested in collecting technologies for the sake of it. I want to build a strong engineering foundation and gradually become someone who can design, understand, and maintain backend systems independently.
+I care about simple architecture, explicit responsibilities, and deliberate trade-offs. I don't want to introduce abstractions because they look sophisticated — I want them to exist because the problem actually requires them.
+
+I'm also interested in the operational side of software: how an application is tested, deployed, observed, logged, and maintained after it leaves the development environment.
 
 ## Current focus
 
 **Backend**
 
 * Python
+* FastAPI
 * PostgreSQL
-* SQL
 * SQLAlchemy
 * Alembic
-* FastAPI
+* Async programming
+* Redis
 * Docker
-* Linux / Bash / SSH
 
-**Problem solving**
+**Engineering**
 
+* Backend architecture
+* Database design
+* Authentication & authorization
+* HTTP & networking
+* Testing
+* Logging & observability
+* CI/CD
+* Deployment & infrastructure
 * Algorithms & Data Structures
-* LeetCode
-
-**Current path**
-
-PostgreSQL → Domain Modeling → SQLAlchemy → Alembic → FastAPI → Async → Authentication → Testing
 
 ## Projects
+
+### Mini Jira
+
+A backend issue-tracking system built with Python and FastAPI.
+
+The project is used as a practical environment for learning how a backend evolves from application code into a complete system.
+
+Current stack:
+
+* Python
+* FastAPI
+* PostgreSQL
+* SQLAlchemy
+* Alembic
+* Pydantic
+* Docker
+
+Current functionality includes:
+
+* User CRUD
+* Password hashing with Argon2
+* JWT-based authentication
+* Access and refresh tokens
+* Refresh-token rotation and revocation
+* HttpOnly refresh-token cookies
+* Async database access
+* Database migrations
+* Structured application architecture
+* Automated testing
+
+The project is intentionally smaller than Jira itself. The goal is not to reproduce an existing product, but to use a realistic domain to explore backend architecture and the engineering decisions surrounding it.
+
+The next stages extend the system beyond application logic into caching, observability, monitoring, CI/CD, and deployment to a remote server.
+
+**Repository:** [mini-jira](https://github.com/sokolov-na/mini-jira)
 
 ### HTTP CRUD API
 
 A small HTTP CRUD API built from scratch without a web framework.
 
-The project was created as a learning exercise to understand HTTP and backend architecture at a lower level before moving to FastAPI.
+This was my first deliberate step toward understanding backend development below the framework level.
 
 It includes:
 
@@ -56,29 +98,11 @@ It includes:
 
 **Repository:** [http-crud-api](https://github.com/sokolov-na/http-crud-api)
 
-### Mini Jira
-
-A backend project currently in development.
-
-The goal is to build a small issue-tracking system while applying modern backend practices and exploring database design, domain modeling, authentication, permissions, and asynchronous development.
-
-Planned stack:
-
-* Python
-* FastAPI
-* PostgreSQL
-* SQLAlchemy
-* Alembic
-* Docker
-* Pytest
-
-The project is intentionally smaller than Jira itself. The focus is on understanding the domain, making deliberate architectural decisions, and learning through implementation rather than reproducing every feature of an existing product.
-
 ## How I use AI
 
-I use AI extensively as a development and learning tool, but I don't want it to replace my engineering judgment.
+I use AI extensively as a development and learning tool, but I don't want it to replace engineering judgment.
 
-I prefer to design the architecture, understand the trade-offs, and make the important decisions myself.
+I prefer to understand the problem first, design the architecture, and make the important decisions myself.
 
 AI is useful to me for:
 
@@ -87,17 +111,20 @@ AI is useful to me for:
 * Refactoring
 * Documentation
 * Finding edge cases
+* Exploring alternative approaches
 * Testing ideas
 * Routine development work
 
-The important part is that I want to understand the code and decisions behind what I build, whether I wrote the implementation manually or with AI assistance.
+The important part is understanding the system and the reasoning behind its design, regardless of who wrote a particular piece of code.
 
 ## What I'm aiming for
 
-My goal is to become a strong and versatile software engineer with a broad understanding of software systems.
+I want to become a strong and versatile software engineer with a broad understanding of software systems.
 
-I want to look beyond individual frameworks and technologies, understand how the pieces fit together, and make engineering decisions based on actual trade-offs rather than following patterns blindly.
+I'm interested not only in writing application code, but also in understanding what happens around it: how data moves through a system, how services communicate, how failures are handled, how software is tested and deployed, and how a running system is observed and maintained.
+
+My goal is to build that understanding layer by layer and eventually be comfortable moving between different parts of a system when the problem requires it.
 
 ---
 
-*Building systems, understanding how they work, and learning one layer at a time.*
+*Building systems, understanding their boundaries, and learning how the pieces fit together.*
