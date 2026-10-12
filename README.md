@@ -1,129 +1,93 @@
 # Hi, I'm Nikita
 
-I'm a Computer Science student focused on backend engineering with Python.
+**Python Backend Developer · Computer Science Student**
 
-I approach software as a system rather than a collection of technologies. I want to understand how the layers fit together — from application logic and data modeling to networking, infrastructure, deployment, and observability.
+I build backend applications with Python, focusing on API design, databases, authentication, testing, and deployment.
 
-My current focus is backend development, but the long-term goal is broader: to become a versatile software engineer capable of understanding, designing, and maintaining systems as a whole.
+I'm interested in how software works beyond individual frameworks — from application architecture and data modeling to networking, infrastructure, and production operations.
 
-## About me
+I learn by building systems, understanding their trade-offs, and improving them through practical experience.
 
-I learn primarily by building things.
+## Tech Stack
 
-I started with lower-level backend fundamentals and gradually moved toward higher-level abstractions. Instead of treating frameworks as black boxes, I prefer to understand what they solve, what they hide, and where their boundaries are.
+**Backend & Databases**
+- Python, FastAPI, Pydantic
+- PostgreSQL, SQLAlchemy, Alembic
+- Async programming, REST APIs
+- Authentication & authorization
 
-This approach has taken me from building an HTTP API without a framework to designing an asynchronous backend with a database, migrations, authentication, testing, and infrastructure around it.
+**Infrastructure & Engineering**
+- Docker, Docker Compose, Linux
+- Git, GitHub Actions, CI/CD, GHCR
+- Caddy, Cloudflare, HTTPS
+- Pytest, automated testing, application logging
 
-I care about simple architecture, explicit responsibilities, and deliberate trade-offs. I don't want to introduce abstractions because they look sophisticated — I want them to exist because the problem actually requires them.
-
-I'm also interested in the operational side of software: how an application is tested, deployed, observed, logged, and maintained after it leaves the development environment.
-
-## Current focus
-
-**Backend**
-
-* Python
-* FastAPI
-* PostgreSQL
-* SQLAlchemy
-* Alembic
-* Async programming
-* Redis
-* Docker
-
-**Engineering**
-
-* Backend architecture
-* Database design
-* Authentication & authorization
-* HTTP & networking
-* Testing
-* Logging & observability
-* CI/CD
-* Deployment & infrastructure
-* Algorithms & Data Structures
+**Additional Experience**
+- JavaScript, HTML, CSS
+- Node.js, Express, Prisma
+- TypeScript and React — basic familiarity
 
 ## Projects
 
 ### Mini Jira
 
-A backend issue-tracking system built with Python and FastAPI.
+**A self-hosted project management application under active development, built around a Python backend.**
 
-The project is used as a practical environment for learning how a backend evolves from application code into a complete system.
+[Live Application](https://mini-jira.ru) · [API Documentation](https://api.mini-jira.ru/docs) · [Backend Repository](https://github.com/sokolov-na/mini-jira-api)
 
-Current stack:
+Mini Jira is my primary engineering project, developed to explore the full lifecycle of a backend system — from architecture and implementation to automated testing, deployment, and production operation.
 
-* Python
-* FastAPI
-* PostgreSQL
-* SQLAlchemy
-* Alembic
-* Pydantic
-* Docker
+**Backend**
+- Asynchronous REST API with FastAPI and SQLAlchemy
+- PostgreSQL with versioned Alembic migrations
+- JWT-based authentication with access and refresh tokens
+- Refresh-token rotation, revocation, and HttpOnly cookies
+- Password hashing, account management, and email-based password recovery
+- Automated functional and integration tests
 
-Current functionality includes:
+**Infrastructure**
+- Linux VPS deployment with Docker Compose
+- Caddy reverse proxy and automatic HTTPS
+- Cloudflare DNS configuration
+- Container images distributed through GHCR
+- GitHub Actions for automated testing and release workflows
+- Versioned deployments with rollback capability
 
-* User CRUD
-* Password hashing with Argon2
-* JWT-based authentication
-* Access and refresh tokens
-* Refresh-token rotation and revocation
-* HttpOnly refresh-token cookies
-* Async database access
-* Database migrations
-* Structured application architecture
-* Automated testing
+The application also includes a React and TypeScript web interface, developed with AI assistance and integrated with the backend API.
 
-The project is intentionally smaller than Jira itself. The goal is not to reproduce an existing product, but to use a realistic domain to explore backend architecture and the engineering decisions surrounding it.
-
-The next stages extend the system beyond application logic into caching, observability, monitoring, CI/CD, and deployment to a remote server.
-
-**Repository:** [mini-jira](https://github.com/sokolov-na/mini-jira)
+The current foundation covers authentication and account management. Upcoming development focuses on projects, membership, permissions, and issue tracking.
 
 ### HTTP CRUD API
 
-A small HTTP CRUD API built from scratch without a web framework.
+[Repository](https://github.com/sokolov-na/http-crud-api)
 
-This was my first deliberate step toward understanding backend development below the framework level.
+An HTTP CRUD API built without a web framework to explore what happens beneath higher-level backend abstractions.
 
-It includes:
+- Custom HTTP server and routing
+- Service and repository layers
+- Validation and error handling
+- Unit, integration, and end-to-end tests
+- Structured JSONL logging
+- Environment-based configuration
+- Docker and Docker Compose
 
-* Custom HTTP server and routing
-* Service and repository layers
-* Validation and error handling
-* Unit, integration, and end-to-end tests
-* Structured JSONL logging
-* Environment-based configuration
-* Docker and Docker Compose
+This project helped me understand the responsibilities that frameworks typically abstract away.
 
-**Repository:** [http-crud-api](https://github.com/sokolov-na/http-crud-api)
+## Engineering Approach
 
-## How I use AI
+I prefer simple architecture, explicit responsibilities, and abstractions driven by real requirements rather than unnecessary complexity.
 
-I use AI extensively as a development and learning tool, but I don't want it to replace engineering judgment.
+I value understanding how a system behaves as a whole — not only how its components are implemented, but also how they interact, fail, recover, and operate in production.
 
-I prefer to understand the problem first, design the architecture, and make the important decisions myself.
+I use AI as a tool for research, implementation, code review, testing, and routine development. Architecture, trade-offs, and engineering decisions remain my responsibility.
 
-AI is useful to me for:
+## Currently Exploring
 
-* Research and learning
-* Code review
-* Refactoring
-* Documentation
-* Finding edge cases
-* Exploring alternative approaches
-* Testing ideas
-* Routine development work
-
-The important part is understanding the system and the reasoning behind its design, regardless of who wrote a particular piece of code.
-
-## What I'm aiming for
-
-I want to become a strong and versatile software engineer with a broad understanding of software systems.
-
-I'm interested not only in writing application code, but also in understanding what happens around it: how data moves through a system, how services communicate, how failures are handled, how software is tested and deployed, and how a running system is observed and maintained.
-
-My goal is to build that understanding layer by layer and eventually be comfortable moving between different parts of a system when the problem requires it.
+- Database design and transaction management
+- Resource-level authorization and permission models
+- Redis and caching strategies
+- Application security, monitoring, and observability
+- Distributed systems fundamentals
 
 ---
 
