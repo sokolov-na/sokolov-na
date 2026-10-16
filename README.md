@@ -2,93 +2,63 @@
 
 **Python Backend Developer · Computer Science Student**
 
-I build backend applications with Python, focusing on API design, databases, authentication, testing, and deployment.
-
-I'm interested in how software works beyond individual frameworks — from application architecture and data modeling to networking, infrastructure, and production operations.
-
-I learn by building systems, understanding their trade-offs, and improving them through practical experience.
-
-## Tech Stack
-
-**Backend & Databases**
-- Python, FastAPI, Pydantic
-- PostgreSQL, SQLAlchemy, Alembic
-- Async programming, REST APIs
-- Authentication & authorization
-
-**Infrastructure & Engineering**
-- Docker, Docker Compose, Linux
-- Git, GitHub Actions, CI/CD, GHCR
-- Caddy, Cloudflare, HTTPS
-- Pytest, automated testing, application logging
-
-**Additional Experience**
-- JavaScript, HTML, CSS
-- Node.js, Express, Prisma
-- TypeScript and React — basic familiarity
+I build backend applications with Python and FastAPI. My main interests are
+API design, data modeling, authentication, and clear boundaries between
+application components. I'm looking for a Python backend internship or junior role.
 
 ## Projects
 
 ### Mini Jira
 
-**A self-hosted project management application under active development, built around a Python backend.**
+My main backend project: a self-hosted application under active development.
+The current alpha covers authentication and account management; project and
+issue tracking are planned.
 
-[Live Application](https://mini-jira.ru) · [API Documentation](https://api.mini-jira.ru/docs) · [Backend Repository](https://github.com/sokolov-na/mini-jira-api)
+- Async REST API with FastAPI, SQLAlchemy, PostgreSQL, and Alembic.
+- JWT access tokens, refresh-token rotation and revocation, and HttpOnly cookies.
+- Password hashing, profile management, and password recovery.
+- Automated tests, Docker Compose, GitHub Actions, and container images in GHCR.
+- Deployed on a Linux VPS behind Caddy with HTTPS.
 
-Mini Jira is my primary engineering project, developed to explore the full lifecycle of a backend system — from architecture and implementation to automated testing, deployment, and production operation.
+I design the domain model, database schema, and backend architecture and write
+the core backend code myself. The React and TypeScript interface was developed
+with AI assistance.
 
-**Backend**
-- Asynchronous REST API with FastAPI and SQLAlchemy
-- PostgreSQL with versioned Alembic migrations
-- JWT-based authentication with access and refresh tokens
-- Refresh-token rotation, revocation, and HttpOnly cookies
-- Password hashing, account management, and email-based password recovery
-- Automated functional and integration tests
-
-**Infrastructure**
-- Linux VPS deployment with Docker Compose
-- Caddy reverse proxy and automatic HTTPS
-- Cloudflare DNS configuration
-- Container images distributed through GHCR
-- GitHub Actions for automated testing and release workflows
-- Versioned deployments with rollback capability
-
-The application also includes a React and TypeScript web interface, developed with AI assistance and integrated with the backend API.
-
-The current foundation covers authentication and account management. Upcoming development focuses on projects, membership, permissions, and issue tracking.
+[Backend repository](https://github.com/sokolov-na/mini-jira-api) ·
+[Application](https://mini-jira.ru) ·
+[API docs](https://api.mini-jira.ru/docs)
 
 ### HTTP CRUD API
 
+A Python HTTP API built without a web framework to understand request handling,
+routing, validation, and persistence beneath framework abstractions.
+
+- CRUD endpoints for users, with JSON file storage.
+- Service and repository layers, validation, and error handling.
+- Unit, integration, and end-to-end tests.
+- Structured JSONL logging, environment-based configuration, and Docker Compose.
+
 [Repository](https://github.com/sokolov-na/http-crud-api)
 
-An HTTP CRUD API built without a web framework to explore what happens beneath higher-level backend abstractions.
+## Tools I Use
 
-- Custom HTTP server and routing
-- Service and repository layers
-- Validation and error handling
-- Unit, integration, and end-to-end tests
-- Structured JSONL logging
-- Environment-based configuration
-- Docker and Docker Compose
+- **Backend:** Python, FastAPI, Pydantic, SQLAlchemy, Alembic, PostgreSQL.
+- **Development:** Git, uv, pytest, Ruff, basedpyright.
+- **Infrastructure:** Linux, Docker, Docker Compose, GitHub Actions, GHCR, Caddy.
+- **Earlier experience:** JavaScript, HTML, CSS, Node.js, Express, and Prisma;
+  basic familiarity with React and TypeScript.
 
-This project helped me understand the responsibilities that frameworks typically abstract away.
+## How I Work
 
-## Engineering Approach
+I use DDD and Clean Architecture where they help clarify the domain and
+responsibilities. I prefer being able to explain a design choice and its
+trade-offs over adding abstractions by default.
 
-I prefer simple architecture, explicit responsibilities, and abstractions driven by real requirements rather than unnecessary complexity.
+I use AI to discuss solutions and help with documentation, audits, tests,
+deployment, and targeted refactoring. I review its suggestions and remain
+responsible for the code and engineering decisions.
 
-I value understanding how a system behaves as a whole — not only how its components are implemented, but also how they interact, fail, recover, and operate in production.
+Currently studying Redis and caching, resource-level permissions, monitoring,
+and distributed systems fundamentals.
 
-I use AI as a tool for research, implementation, code review, testing, and routine development. Architecture, trade-offs, and engineering decisions remain my responsibility.
-
-## Currently Exploring
-
-- Database design and transaction management
-- Resource-level authorization and permission models
-- Redis and caching strategies
-- Application security, monitoring, and observability
-- Distributed systems fundamentals
-
----
-
-*Building systems, understanding their boundaries, and learning how the pieces fit together.*
+[Telegram](https://t.me/N_SOKOL_A)
